@@ -20,5 +20,6 @@ tss:
     dd 0
     dd 0
 
+section .bss
 stack0: resb 4096 ; if an interrupt uses the stack only for register preservation
 stack1: resb 4096 ; changing to 128 is safe assuming you don't push more than 10 registers
